@@ -1,0 +1,41 @@
+name: rick_and_morty_app
+description: A Flutter app for Rick and Morty characters with favorites and offline support.
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # State Management
+  provider: ^6.1.1
+
+  # HTTP requests
+  http: ^1.1.0
+
+  # Local database
+  sqflite: ^2.3.0
+  sqflite_common_ffi: ^2.3.0
+  path: ^1.8.3
+
+  # JSON serialization
+  json_annotation: ^4.9.0
+
+  # Shared preferences for theme
+  shared_preferences: ^2.2.2
+
+  # Icons
+  cupertino_icons: ^1.0.2
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^3.0.0
+  json_serializable: ^6.7.1
+  build_runner: ^2.4.7
+
+flutter:
+  uses-material-design: true
