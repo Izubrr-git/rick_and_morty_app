@@ -3,7 +3,7 @@
 Мобильное приложение на Flutter для просмотра персонажей из мультсериала **"Рик и Морти"** с возможностью добавления в избранное и оффлайн-доступом.
 
 ![rick-and-morty](https://img.shields.io/badge/Flutter-v3.x-blue?logo=flutter)  
-![platforms](https://img.shields.io/badge/platforms-Android%20%7C%20iOS-lightgrey?logo=android&logoColor=green&logo=apple&logoColor=black)
+![platforms](https://img.shields.io/badge/platform-Android-green?logo=android)
 
 ---
 
