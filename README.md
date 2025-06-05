@@ -1,16 +1,38 @@
-# rick_and_morty_app
+Rick & Morty Flutter App
+Мобильное приложение на Flutter для просмотра персонажей из мультсериала "Рик и Морти" с возможностью добавления в избранное и оффлайн-доступом.
+Функции
+✅ Реализованные возможности:
 
-A new Flutter project.
+Список персонажей - загрузка с Rick and Morty API
+Пагинация - автоматическая подгрузка при скролле
+Избранное - добавление/удаление персонажей
+Сортировка избранного - по имени, статусу, виду
+Оффлайн режим - кеширование данных в SQLite
+Темная тема - переключение светлая/темная тема
+Анимации - при добавлении в избранное
+Обработка ошибок - с возможностью повтора
 
-## Getting Started
+🏗️ Архитектура:
 
-This project is a starting point for a Flutter application.
+Clean Architecture - разделение по слоям
+Provider - для управления состоянием
+SQLite - локальная база данных
+HTTP - для REST API запросов
 
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+Структура проекта
+lib/
+├── main.dart                 # Точка входа
+├── models/                   # Модели данных
+│   ├── character.dart
+│   └── character.g.dart
+├── services/                 # Сервисы
+│   ├── api_service.dart     # REST API
+│   └── database_service.dart # SQLite
+├── providers/               # State Management
+│   ├── character_provider.dart
+│   └── theme_provider.dart
+├── pages/                   # Экраны
+│   ├── characters_page.dart
+│   └── favorites_page.dart
+└── widgets/                 # UI компоненты
+    └── character_card.dart
