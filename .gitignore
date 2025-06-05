@@ -31,3 +31,11 @@ android/*.iml
 
 # Обновляемые зависимости
 pubspec.lock
+
+# Неиспользуемые платформы
+ios/
+macos/
+windows/
+linux/
+web/
+
